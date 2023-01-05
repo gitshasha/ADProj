@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdProj</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .navbar {
+      height: 10vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .title {
+      display: flex;
+      width: 25vh;
+      justify-content: space-around;
+      margin-left: 5vh;
+
+      align-items: center;
+    }
+    .titlename {
+      font-weight: 400;
+    }
+    .image {
+      height: 5vh;
+      width: 5vh;
+      border-radius: 50%;
+    }
+    .cont {
+      width: 98vw;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .intro {
+      height: 50vh;
+      width: 50vw;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .adname1 {
+      font-size: 3.5em;
+      color: #000;
+      font-family: sans-serif;
+      display: block;
+    }
+    .desc {
+      font-family: sans-serif;
+      font-size: 1.5em;
+    }
+    .covint {
+      height: 90vh;
+      display: flex;
+      width: 95vw;
+      flex-direction: column;
+      margin: auto;
+    }
+    .person1 {
+      height: 40vh;
+      width: 90vw;
+      display: flex;
+      align-items: center;
+      margin-top: 10vh;
+      justify-content: space-around;
+      font-size: 1.5em;
+    }
+    .cha1 {
+      height: 100%;
+      width: 40%;
+      border: 1px solid red;
+
+      border-radius: 1vh;
+    }
+    .matter {
+      height: 50%;
+
+      width: 50%;
+    }
+    .chars {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: auto;
+    }
+    .upload {
+      height: 80vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      border: 1px solid blue;
+    }
+    .Up {
+      margin: 20vh 0 10vh 0vh;
+      font-size: 2.7em;
+      font-family: sans-serif;
+    }
+    .butt {
+      height: 5vh;
+      width: 10vw;
+    }
+    a {
+      text-decoration: none;
+    }
+    body {
+      overflow: hidden; /* Hide scrollbars */
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <div class="title">
+        <div class="image"></div>
+        <h1 class="titlename">McWayd</h1>
+      </div>
+    </div>
+    <div class="cont">
+      <div class="covint">
+        <div class="intro">
+          <h6 class="adname1">Rotten Fruits Detection</h6>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet illo
+            dolores, provident odit dolorum qui odio reiciendis reprehenderit
+            culpa sint ad quam Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. In corrupti fugit saepe blanditiis minima
+            exercitationem dignissimos eius reprehenderit quaerat sunt. vitae
+            temporibus aperiam nam labore molestias ut corrupti quod alias. Ea
+            debitis eos veritatis nostrum facere, dolorum autem.
+          </p>
+        </div>
+      </div>
+      <div class="chars">
+        <div class="person1">
+          <div class="matter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+            ut quaerat nihil commodi rerum non nulla, quasi dolores neque in
+            nisi sapiente, mollitia impedit nam debitis accusantium maiores
+            optio magni vitae harum velit, consequuntur reiciendis ipsum iusto!
+            Quis, autem pariatur.
+          </div>
+          <div class="cha1"></div>
+        </div>
+        <div class="person1">
+          <div class="cha1"></div>
+          <div class="matter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+            ut quaerat nihil commodi rerum non nulla, quasi dolores neque in
+            nisi sapiente, mollitia impedit nam debitis accusantium maiores
+            optio magni vitae harum velit, consequuntur reiciendis ipsum iusto!
+            Quis, autem pariatur.
+          </div>
+        </div>
+        <div class="person1">
+          <div class="matter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+            ut quaerat nihil commodi rerum non nulla, quasi dolores neque in
+            nisi sapiente, mollitia impedit nam debitis accusantium maiores
+            optio magni vitae harum velit, consequuntur reiciendis ipsum iusto!
+            Quis, autem pariatur.
+          </div>
+          <div class="cha1"></div>
+        </div>
+        <div class="person1">
+          <div class="cha1"></div>
+          <div class="matter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+            ut quaerat nihil commodi rerum non nulla, quasi dolores neque in
+            nisi sapiente, mollitia impedit nam debitis accusantium maiores
+            optio magni vitae harum velit, consequuntur reiciendis ipsum iusto!
+            Quis, autem pariatur.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upload">
+      <h1 class="Up">Upload any Image</h1>
+      <button class="butt"><a href="/fruit/image_upload/">upload</a></button>
+    </div>
+  </body>
+</html>
